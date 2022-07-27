@@ -16,7 +16,7 @@ class Application(ttk.Frame):
         ttk.Button(self, text='Get', command=self.generate_pin_code).grid(column=0, row=2)
 
     def generate_pin_code(self):
-        self.pin.set(get_pin_code())
+        self.pin.set(get_pin_code(8))
 
 
 if __name__ == '__main__':
